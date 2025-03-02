@@ -43,6 +43,10 @@ Installing is as simple as running
 ```bash
 $ git clone https://github.com/NihalNavath/word-game-jam
 ```
+change directory into project
+```bash
+$ cd word-game-jam
+```
 
 then run this in the cloned directory to install the dependencies
 

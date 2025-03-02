@@ -1,0 +1,33 @@
+body {
+    background: url('/assets/backgrounds/bg2.jpg') no-repeat center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.word-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    max-width: 90%;
+    text-align: center;
+}
+
+.word {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff8c00, #ff0080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+    word-break: break-word; /* Ensures long words wrap properly */
+    white-space: normal; /* Allows wrapping */
+}
+
+
+
+.input-container {
+    text-align: center;
+    padding: 20px;
+}

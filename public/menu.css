@@ -1,0 +1,83 @@
+body {
+    background: url('/assets/backgrounds/bg2.jpg') no-repeat center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'Press Start 2P', cursive;
+}
+
+.menu-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.menu-input-label{
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.blinking-dot{
+    width: 12px;
+    height: 12px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.btn-play {
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff8c00, #ff2d55);
+    border: none;
+    color: white;
+    text-shadow: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn-play:hover {
+    background: linear-gradient(45deg, #ff2d55, #ff8c00);
+    transform: scale(1.05);
+}
+
+.title {
+    font-size: 2rem;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #ff2d55, 0 0 15px #ff2d55;
+    }
+
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff8c00, 0 0 30px #ff8c00;
+    }
+}
+
+.game-info {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
